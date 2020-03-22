@@ -1,3 +1,14 @@
+### Node.js
+
+- Node.js arch
+- https://nodejs.org/en/docs/
+- How node call os bindings, to check node code
+  - `internalBinding('os')` -> v8 engine -> cpp -> libuv
+  - `node/lib` & `node/src/node_os.cc`
+  - getCPUs()
+- `EventEmitter`
+  - Observer pattern: `addEventListener` & `removeEventListener`
+
 ### Tooling
 
 - node
