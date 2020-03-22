@@ -10,6 +10,16 @@
   - View system supporting 14+ template engines
   - Content negotiation
   - Executable for generating applications quickly
+- onion model for middleware
+  - raising problems if async function call inside middlewares
+
+### Koa
+
+- https://npmjs.com/package/koa
+- not bundled with any middleware
+- support stack-like middleware
+- support async function call in middleware
+- micro-kernel
 
 ### Node.js
 
