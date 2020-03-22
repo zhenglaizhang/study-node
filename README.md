@@ -1,3 +1,16 @@
+### Express
+
+- https://github.com/expressjs/express/wiki
+- https://github.com/expressjs/generator
+- https://npmjs.com/package/express
+  - Robust routing
+  - Focus on high performance
+  - Super-high test coverage
+  - HTTP helpers (redirection, caching, etc)
+  - View system supporting 14+ template engines
+  - Content negotiation
+  - Executable for generating applications quickly
+
 ### Node.js
 
 - Node.js arch
@@ -53,6 +66,16 @@
 
 - Initial for Node.js, expanding to browser side
 
+### Useful package
+
+```
+npm i -g httpserver
+```
+
 ### TODO
 
 - [ ] Override `module.exports`
+- [ ] Node.js internals
+- [ ] Express logic
+- [ ] Express middleware internals - onion model
+  - `next()` is blocking, take care, may lead high latency and wrong result
