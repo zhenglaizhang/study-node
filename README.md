@@ -24,6 +24,10 @@
   - `rejected`
   - solve the callback hell transformed to nearly linear call
   - `Promise.all([])`
+- `async` sugar for promise
+  - await to pause an async function execution
+  - await a promise to wait for its result
+  - simplify the error handling, try catch a await promised error
 
 ### Tooling
 

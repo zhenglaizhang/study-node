@@ -58,3 +58,12 @@ var p = interview(1)
   .catch(err => {
     console.log("cry at round #" + err.round);
   });
+
+(async function() {
+  try {
+    await Promise.all([interview(1), interview(2)]);
+  } catch (e) {
+    return console.log("cry again at #", e.round);
+  }
+  console.log("simle again");
+})();
