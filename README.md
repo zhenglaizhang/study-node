@@ -18,6 +18,12 @@
 - Event Loop
 - Non-blocking IO
   - avoid non-necessary waiting
+- Promise
+  - `pending`
+  - `fulfilled` | `resolved`
+  - `rejected`
+  - solve the callback hell transformed to nearly linear call
+  - `Promise.all([])`
 
 ### Tooling
 
