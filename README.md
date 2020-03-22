@@ -8,6 +8,15 @@
   - getCPUs()
 - `EventEmitter`
   - Observer pattern: `addEventListener` & `removeEventListener`
+  - direct call vs publish event
+    - publisher does not need to know if subscriber exists
+    - publisher can contiune even if none subscriber exists
+    - events might be less reliable
+
+#### Async
+
+- Event Loop
+- Non-blocking IO
 
 ### Tooling
 
