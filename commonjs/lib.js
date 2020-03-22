@@ -8,6 +8,11 @@ exports.someobj = {
   hello: "world"
 };
 
+// override exports with single function
+module.exports = function minus(a, b) {
+  return a - b;
+};
+
 setTimeout(() => {
   console.log(exports);
 }, 2000);

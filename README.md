@@ -11,3 +11,8 @@
 
 ### CommonJS module spec
 - Initial for Node.js, expanding to browser side
+
+
+### TODO
+
+- [ ] Override `module.exports`
