@@ -17,6 +17,7 @@
 
 - Event Loop
 - Non-blocking IO
+  - avoid non-necessary waiting
 
 ### Tooling
 
