@@ -36,6 +36,12 @@
     - publisher can contiune even if none subscriber exists
     - events might be less reliable
 
+#### Buffer
+
+- Big/Little Edian
+- https://github.com/protocolbuffers/protobuf
+- https://www.npmjs.com/package/protocol-buffers
+
 #### Async
 
 - Event Loop

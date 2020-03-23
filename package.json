@@ -21,6 +21,7 @@
     "glob": "^7.1.6",
     "gulp": "^4.0.2",
     "koa": "^2.11.0",
-    "koa-mount": "^4.0.0"
+    "koa-mount": "^4.0.0",
+    "protocol-buffers": "^4.1.2"
   }
 }
