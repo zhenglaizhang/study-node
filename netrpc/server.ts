@@ -8,10 +8,11 @@ const data = {
 
 const server = net.createServer(socket => {
   socket.on("data", buffer => {
-    const id = buffer.readInt32BE();
+    const seq = buffer.slice(0, 2);
+    const id = buffer.readInt32BE(2);
     buffer.write(data[id]);
     setTimeout(() => {
-      socket.write(buffer);
+      socket.write(Buffer.concat([seq, buffer]));
     }, 1000);
   });
 });

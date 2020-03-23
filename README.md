@@ -42,6 +42,13 @@
 - https://github.com/protocolbuffers/protobuf
 - https://www.npmjs.com/package/protocol-buffers
 
+### RPC
+
+- simplex
+- half-duplex
+- full-duplex
+- TCP sticky bag
+
 #### Async
 
 - Event Loop
