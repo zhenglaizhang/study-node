@@ -49,6 +49,11 @@
 - full-duplex
 - TCP sticky bag
 
+### Template engine
+
+- include sub-template
+- xss filtering, teampate helper method
+
 #### Async
 
 - Event Loop
@@ -103,3 +108,4 @@ npm i -g httpserver
 - [ ] Express middleware internals - onion model
   - `next()` is blocking, take care, may lead high latency and wrong result
 - [ ] Koa
+- [ ] XSS, CSRF
