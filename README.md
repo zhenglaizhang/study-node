@@ -53,6 +53,7 @@
 
 - include sub-template
 - xss filtering, teampate helper method
+- high performance implementation through ES6 str
 
 #### Async
 

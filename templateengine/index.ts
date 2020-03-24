@@ -9,7 +9,7 @@ console.log(result);
 
 const templateMap = {
   templateA: "`<h2>${include('templateB')}</h2>`",
-  templateB: "`<p>haha</p>`"
+  templateB: "`<p>haha</p>`" // fs.readFileSync(...)
 } as any;
 
 const context = {
