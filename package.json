@@ -13,9 +13,16 @@
   "author": "zhenglaizhang",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^13.9.2"
+    "@types/http-status-codes": "^1.2.0",
+    "@types/koa": "^2.11.2",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-mount": "^4.0.0",
+    "@types/koa-router": "^7.4.0",
+    "@types/koa-static": "^4.0.1",
+    "@types/node": "^13.9.4"
   },
   "dependencies": {
+    "easy_sock": "^0.3.9",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "extend": "^3.0.2",

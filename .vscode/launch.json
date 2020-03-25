@@ -9,8 +9,8 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/templateengine/index.js",
-      "outFiles": ["${workspaceFolder}/**/*.js"]
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${workspaceFolder}/koa/app.ts"]
     }
   ]
 }
