@@ -36,6 +36,11 @@
     - publisher can contiune even if none subscriber exists
     - events might be less reliable
 
+
+### vm
+- https://odino.org/eval-no-more-understanding-vm-vm2-nodejs/
+- `vm.runInNewContext` vs `eval`
+
 #### Buffer
 
 - Big/Little Edian
