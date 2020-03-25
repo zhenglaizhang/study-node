@@ -1,3 +1,8 @@
+### GraphQL
+
+- `npm i graphql`
+- For data aggregation and let frontend determine what data they want to query
+
 ### Express
 
 - https://github.com/expressjs/express/wiki
@@ -36,8 +41,8 @@
     - publisher can contiune even if none subscriber exists
     - events might be less reliable
 
-
 ### vm
+
 - https://odino.org/eval-no-more-understanding-vm-vm2-nodejs/
 - `vm.runInNewContext` vs `eval`
 
