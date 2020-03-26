@@ -14,7 +14,6 @@ const root = {
 
 export const query = query => {
   return graphql(schema, query, root).then(resp => {
-    // console.log(resp);
     return resp;
   });
 };
