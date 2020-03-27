@@ -1,3 +1,10 @@
+### Frontend & Backend
+
+- share same template redering logic, for SEO & dynamic
+- env specific logic & data specific logic should be seperated
+- data specific logic could be reused by frontend & backend
+- `next.js` & `axios`
+
 ### GraphQL
 
 - `npm i graphql`
