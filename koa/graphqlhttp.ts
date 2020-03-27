@@ -4,9 +4,23 @@ const static = require("koa-static");
 const graphqlHttp = require("koa-graphql");
 
 // GET http://localhost:3000/?query={comment{name,id}}
+/*
+query GetCommentIdName {
+  comment {
+    id
+    name
+    praiseNum
+  }
+}
+
+mutation Priaise {
+  praise(id: 3)
+}
+*/
 app.use(
   graphqlHttp({
-    schema: require("./schema")
+    schema: require("./schema"),
+    graphiql: true
   })
 );
 

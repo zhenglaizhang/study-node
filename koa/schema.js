@@ -56,9 +56,10 @@ schema.getQueryType().getFields().comment.resolve = () => {
   return Object.keys(mockDb).map(key => {
     return mockDb[key];
   });
+  return null;
 };
 
-schema.getMutationType().getFields().praise.resolve = id => {
+schema.getMutationType().getFields().praise.resolve = (src, { id }) => {
   mockDb[id].praiseNum++;
 };
 
