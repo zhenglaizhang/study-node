@@ -1,8 +1,18 @@
+## V8 engine
+
 ## V8 GC
 
 - young & old generation
 - memory leak
 - Chrom DevTool to spot GC issues, take multiple snapshots
+- `Buffer` 8k allocation pool list
+- node C++ addons
+  - `node-gyp configure build`
+  - https://github.com/nodejs/node-gyp
+  - https://nodejs.org/api/addons.html
+  - https://github.com/nodejs/node-addon-examples
+  - https://github.com/charlieduong94/node-golang-native-addon-experiment
+  - https://github.com/charlieduong94/node-golang-native-addon-experiment
 
 ### Perf testing
 
