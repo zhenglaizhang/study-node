@@ -1,3 +1,17 @@
+### Perf testing
+
+- `apache bench` or `webbench`
+- `sudo apt install apache2-utils`
+- `ab -c300 -n10000 "http://localhost:3000/?query={comment{name}}"`
+- find perf bottleneck `top` or `iostat`
+- it's common that cpu is bottleneck since js string processing
+
+### Node perf
+
+- `node --prof index.js` & `node --prof-process aa.log > profile.txt`
+- `node --inspect-brk index.js` & `chrome://inspect`
+- https://www.npmjs.com/package/clinic
+
 ### Frontend & Backend
 
 - share same template redering logic, for SEO & dynamic
