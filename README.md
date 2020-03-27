@@ -1,3 +1,9 @@
+## V8 GC
+
+- young & old generation
+- memory leak
+- Chrom DevTool to spot GC issues, take multiple snapshots
+
 ### Perf testing
 
 - `apache bench` or `webbench`
@@ -5,11 +11,12 @@
 - `ab -c300 -n10000 "http://localhost:3000/?query={comment{name}}"`
 - find perf bottleneck `top` or `iostat`
 - it's common that cpu is bottleneck since js string processing
+- reduce computation work under node
 
 ### Node perf
 
 - `node --prof index.js` & `node --prof-process aa.log > profile.txt`
-- `node --inspect-brk index.js` & `chrome://inspect`
+- `node --inspect-brk index.js` & `chrome://inspect` & profiling
 - https://www.npmjs.com/package/clinic
 
 ### Frontend & Backend

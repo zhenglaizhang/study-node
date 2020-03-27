@@ -9,11 +9,15 @@ const app = new koa();
 // by default return buf instead of utf-8
 const body = fs.readFileSync(path.join(__dirname, "static/home/index.htm"));
 
+const leak = [];
+
 app.use(
   mount("/", async ctx => {
     ctx.status = 200;
     ctx.stype = "html";
     ctx.body = body;
+    const nb = new Buffer(body.length);
+    leak.push(body.copy(nb));
   })
 );
 
