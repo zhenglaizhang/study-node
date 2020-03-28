@@ -8,12 +8,14 @@ http
       res.end();
       return;
     }
-    console.log(req.url);
-    console.log(req.httpVersion);
-    console.log(req.headers);
+    // console.log(req.url);
+    // console.log(req.httpVersion);
+    // console.log(req.headers);
     // console.log(res);
     res.writeHead(200);
     // res.end("Hello");
     fs.createReadStream(__dirname + "/index.html").pipe(res);
   })
-  .listen(3000);
+  .listen(3000, () => {
+    console.log("listened 3000");
+  });
