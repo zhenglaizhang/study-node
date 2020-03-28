@@ -10,7 +10,7 @@ http
     }
     // console.log(req.url);
     // console.log(req.httpVersion);
-    // console.log(req.headers);
+    // console.log(req.hea  ers);
     // console.log(res);
     res.writeHead(200);
     // res.end("Hello");

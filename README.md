@@ -1,3 +1,7 @@
+### Node source
+
+- https://github.com/nodejs/node
+
 ### Parallel
 
 - `child_process`
@@ -5,6 +9,10 @@
   - Workers (threads) are useful for performing CPU-intensive JavaScript operations. They will not help much with I/O-intensive work. Node.js’s built-in asynchronous I/O operations are more efficient than Workers can be.
   - In actual practice, use a pool of Workers instead for these kinds of tasks. Otherwise, the overhead of creating Workers would likely exceed their benefit.
 - cluster
+  - master + N slaves mode
+  - slaves listens to unix socket, so share same port
+  - master listens on port, and distribute the incoming message to and free forks to process
+  - `RoundRobinHandle`
 
 ## V8 engine
 
