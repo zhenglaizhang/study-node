@@ -1,3 +1,14 @@
+### Event looping
+
+- https://www.taopoppy.cn/node/
+
+### Packaging
+
+- gulp
+- webpack
+  - e.g. <%= %> => \${}
+  - e.g dynamic includes => static includes
+
 ### LESS
 
 - koa-less
