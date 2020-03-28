@@ -1,3 +1,11 @@
+### Parallel
+
+- `child_process`
+- Work thread
+  - Workers (threads) are useful for performing CPU-intensive JavaScript operations. They will not help much with I/O-intensive work. Node.js’s built-in asynchronous I/O operations are more efficient than Workers can be.
+  - In actual practice, use a pool of Workers instead for these kinds of tasks. Otherwise, the overhead of creating Workers would likely exceed their benefit.
+- cluster
+
 ## V8 engine
 
 ## V8 GC
