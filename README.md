@@ -1,3 +1,13 @@
+### Static & Dynamic seperation
+
+- use nginx to serve static content
+  - higher performance than node.js static serving
+- on boarding CDN & http caching to serve static content
+- use nginx load balancing `location` & `upstream`
+- nginx location proxy_cache
+- use redis
+- reduce unnecessary api calls to backend node.js
+
 ### Node source
 
 - https://github.com/nodejs/node
