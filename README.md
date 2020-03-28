@@ -1,3 +1,12 @@
+### LESS
+
+- koa-less
+
+### Design Pattern
+
+- Observer pattern: EventEmitter, DOM addEventListener
+- Facade pattern: jQuery, check if some browser, provide consistent interface
+
 ### Static & Dynamic seperation
 
 - use nginx to serve static content
