@@ -13,6 +13,9 @@
   - slaves listens to unix socket, so share same port
   - master listens on port, and distribute the incoming message to and free forks to process
   - `RoundRobinHandle`
+  - hear beat with ping/pong
+  - restart child if OOM
+  - child exception handler
 
 ## V8 engine
 
