@@ -7,3 +7,10 @@
 - `Symbol.iterator`
 - `for..of` iterates over VALUES, only works with iterable objects
 - `for..in` iterates over enumerable properties
+
+### Generator
+
+- Yield Actions
+  - Send a value to the iterator: `yield "goes to iterator"`
+  - Receive a value from the iterator: `const x = yield;`
+    - `it.next("value for x")` then x is now "value for x"

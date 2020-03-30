@@ -41,6 +41,7 @@ console.log(it2.next());
 console.log(it2.next());
 console.log(it2.next());
 console.log(it2.next());
+// it2.return(); // TypeError: it2.return is not a function
 
 const map = new Map();
 map.set("k1", "v1");

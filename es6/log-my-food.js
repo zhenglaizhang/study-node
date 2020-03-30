@@ -11,7 +11,7 @@ const readline = require("readline").createInterface({
 });
 
 readline.prompt();
-readline.on("line", line => {
+readline.on("line", async line => {
   switch (line.trim()) {
     case "list vegan foods":
       {
@@ -47,9 +47,29 @@ readline.on("line", line => {
       }
       break;
     case "eat":
+      const { data } = await axios.get("http://localhost:3001/food");
+      const it = data[Symbol.iterator]();
+      const actionIterator = {
+        [Symbol.iterator]() {
+          const positions = [...this.actions];
+          return {
+            [Symbol.iterator]() {
+              return this;
+            },
+            next(...args) {
+              if (positions.length > 0) {
+                const pos = positions.shift();
+                const res = pos(...args);
+                return { value: res, done: false };
+              } else {
+                return { done: true };
+              }
+            }
+          };
+        },
+        actions: [askForServingSize, displayCalories]
+      };
       readline.question(`What would you like to log today? `, async item => {
-        const { data } = await axios.get("http://localhost:3001/food");
-        const it = data[Symbol.iterator]();
         let pos = it.next();
         while (!pos.done) {
           const food = pos.value.name;
