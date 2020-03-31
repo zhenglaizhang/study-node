@@ -56,3 +56,25 @@
 - Iteroperability
 - Documentation
 - None are bad, different strengths or weakness, subjective
+
+#### immutable.js
+
+- https://github.com/immutable-js/immutable-js
+- https://immutable-js.github.io/immutable-js/
+- http://untangled.io/ (unofficial doc)
+- Stengths
+  - Guarantees immutability
+  - Performance (structual sharing by reusing as much as possible)
+  - Great for state management (Redux/ngRx)
+- Weaknes
+  - Converting strutures to/from javascript structures
+  - Learning curve
+  - Non-standard syntax (get/set)
+  - Documentation
+- Mental model
+  - Think of Immutable data as a value, e.g like a number
+    - we can think of the collection’s push() method, which adds an item to an existing collection, as being equivalent to an addition operation on a number, which adds a new value to an existing number. In both cases, the original value – the collection and the number – are left completely unchanged, and a new value is returned.
+  - Think of Immutable data as representing the state of data
+    - Think of it as the state of its data at the specific point in time that the collection was created.
+    - Any operation you perform on the data within an Immutable collection (e.g. add or remove an item) will change the state of that data **at a later point in time**, but the state of the data as it existed before the operation remains unchanged
+    - It’s the difference between asking “Who is the President of the United States right now” – which obviously depends on when you ask the question – and “Who was the President of the United States on August 13th 2016” – which is a fact that will never change.
