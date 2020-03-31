@@ -28,5 +28,19 @@
 - Immutable
   - create a new instance with updates
   - convert checking value equality to reference equality, thus boost performance
-  -
 - Closure
+  - Lexical scoping
+- https://github.com/fantasyland/fantasy-land
+
+### Functor
+
+- Can be **mapped**
+- `myFunctor.map(fn)`
+
+### Monad
+
+- Type of functor
+- Container
+- In/Out, provide some wrap to process the value
+- `Promises/Observables` are Monadic or Monad-like
+- `Maybe/Either`
