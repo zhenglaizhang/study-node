@@ -100,3 +100,14 @@
   - Missing Elements
 - `compose`: R => L
 - `pipe`: L => R
+
+### Folktale
+
+- https://folktale.origamitower.com/
+- Strength
+  - Documentation
+  - `Maybe` & `Result` & `Validation`
+  - Fantasy-Land compatible
+- Weakness
+  - Breadth
+  - Experimental
