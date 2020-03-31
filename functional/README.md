@@ -44,3 +44,15 @@
 - In/Out, provide some wrap to process the value
 - `Promises/Observables` are Monadic or Monad-like
 - `Maybe/Either`
+
+### How to select a lib
+
+- Fit the needs or situation
+- Functionality
+- Fresh or Mature
+- Activity
+  - Commits
+  - Issues
+- Iteroperability
+- Documentation
+- None are bad, different strengths or weakness, subjective
