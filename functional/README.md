@@ -78,3 +78,25 @@
     - Think of it as the state of its data at the specific point in time that the collection was created.
     - Any operation you perform on the data within an Immutable collection (e.g. add or remove an item) will change the state of that data **at a later point in time**, but the state of the data as it existed before the operation remains unchanged
     - It’s the difference between asking “Who is the President of the United States right now” – which obviously depends on when you ask the question – and “Who was the President of the United States on August 13th 2016” – which is a fact that will never change.
+
+### Ramda
+
+- https://ramdajs.com/
+- Features
+  - Immutability
+  - Automatic currying
+  - Side-effect free
+  - Data-last
+- the API is king, we sacrifice a great deal of implementation elegance for even a slightly cleaner API
+- strives for performance. A reliable and quick implementation wins over any notations of functional purity
+- Strength
+  - Breadth
+  - Focus
+  - Consistency
+  - Team
+- Weakness
+  - Learning curve
+  - Documentation
+  - Missing Elements
+- `compose`: R => L
+- `pipe`: L => R
