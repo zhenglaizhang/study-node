@@ -20,10 +20,25 @@ function find(xs, predicate) {
   }
 }
 
-const x = find([null, 1], x => true);
-console.log(x);
+const x = find([1, null], x => true)
+  .map(x => {
+    data: x;
+  })
+  // .chain(x => Maybe.Nothing())
+  .chain(x => Maybe.Just("None"))
+  .matchWith({
+    Just: ({ value }) => {
+      console.log(`data: ${value}`);
+    },
+    Nothing: () => {
+      console.log("Nothing");
+      return "boom";
+    }
+  });
 
-const y = find([null, 1], x => false);
+const y = find([null, 1], x => false)
+  .orElse(() => Maybe.Just(12))
+  .getOrElse("we");
 console.log(y);
 
 const Result = require("folktale/result");
@@ -50,7 +65,16 @@ function divide(x, y) {
     return Result.Ok(x / y);
   }
 }
-
-console.log(divide(4, 2));
+const xx = divide(4, 2)
+  .map(x => x + 2)
+  .chain(x => divide(x, 2))
+  .matchWith({
+    Ok: ({ value }) => value,
+    Error: ({ value }) => {
+      console.log(value);
+      return 0;
+    }
+  });
+console.log(xx);
 const err = divide(2, 0);
 console.log(err);
