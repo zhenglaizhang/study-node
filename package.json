@@ -32,6 +32,7 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "extend": "^3.0.2",
+    "fkit": "^3.4.0",
     "folktale": "^2.3.2",
     "glob": "^7.1.6",
     "graphql": "^14.6.0",
@@ -45,6 +46,7 @@
     "protocol-buffers": "^4.1.2",
     "ramda": "^0.27.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "sanctuary": "^3.0.0"
   }
 }

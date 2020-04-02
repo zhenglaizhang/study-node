@@ -111,4 +111,28 @@
 - Weakness
   - Breadth
   - Experimental
-- 
+-
+
+### FKit
+
+- Strengths
+  - Extermely lightweight
+  - Composability
+  - String manipulation
+- Weaknesses
+  - Outdated ?
+  - Documentation
+
+### Sanctuary
+
+- Sanctuary promotes programs composed of simple, pure functions.
+- Stricter than Ramda
+- Maybe and Either
+- Compatible with Fantasy land
+- Strengths
+  - Completeness
+  - Team
+- Weaknesses
+  - Documentation
+  - Functional-purity over ease-of-use
+- Opinionated
