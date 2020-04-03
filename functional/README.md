@@ -1,3 +1,9 @@
+## Big thing
+
+- The discipline of functional programming is more important than the implementation details
+- 
+
+
 ## Why
 
 - Predictable (pure/immutable)
