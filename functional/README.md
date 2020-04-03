@@ -29,8 +29,11 @@
   - Functions as parameters
   - Return a function
 - Currying
-  - `func[1..n] -> func[1..n](1)`
+  - take advantage of lazy evaluation & caching
+  - `func[1..n] -> func[1..n](1)` or `f(x,y) = h(x)(y) = x + y`
   - Partial application vs currying
+    - Currying: A function returning another function that might return another function, but every returned function must take only one parameter at a time.
+    - Partial application: A function returning another function that might return another function, but each returned function can take several parameters.
 - Immutable
   - create a new instance with updates
   - convert checking value equality to reference equality, thus boost performance
