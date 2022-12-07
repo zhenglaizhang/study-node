@@ -30,7 +30,7 @@
     "bindings": "^1.5.0",
     "easy_sock": "^0.3.9",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "extend": "^3.0.2",
     "fkit": "^3.4.0",
     "folktale": "^2.3.2",
